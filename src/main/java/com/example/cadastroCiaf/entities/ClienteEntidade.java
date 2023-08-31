@@ -8,13 +8,16 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Cliente {
+public class ClienteEntidade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id;
+
     private  String nome;
+
     private  String endereco;
-    private  long cpf;
+
+    private  int cpf;
 
 }
